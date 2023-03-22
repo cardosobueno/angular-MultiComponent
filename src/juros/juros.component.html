@@ -1,0 +1,10 @@
+<p>taxa : {{ result }}</p>
+<p>total :{{ result + valor }}</p>
+
+<input type="number" placeholder="Mês" [value]="mes" [(ngModel)]="mes" />
+<br />
+<input type="number" placeholder="Taxa" [value]="taxa" [(ngModel)]="taxa" />
+<br />
+<input type="number" placeholder="Valor" [value]="valor" [(ngModel)]="valor" />
+<br />
+<button (click)="calcula()">Começar</button>
