@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AndreHeaderComponentComponent } from './andre-header-component/andre-header-component.component';
 import { AndreDanilloTarcisioTimerComponentComponent } from './andre-danillo-tarcisio-timer-component/andre-danillo-tarcisio-timer-component.component';
+import { AndreDanilloTarcisioRandomComponentComponent } from './andre-danillo-tarcisio-random-component/andre-danillo-tarcisio-random-component.component';
 
 @Component({
   selector: 'my-app',
@@ -18,6 +19,7 @@ import { AndreDanilloTarcisioTimerComponentComponent } from './andre-danillo-tar
     FormsModule,
     ReactiveFormsModule,
     AndreDanilloTarcisioTimerComponentComponent,
+    AndreDanilloTarcisioRandomComponentComponent,
   ],
   template: `
     <h1>Hello from {{name}}!</h1>
@@ -33,6 +35,10 @@ import { AndreDanilloTarcisioTimerComponentComponent } from './andre-danillo-tar
 
     <app-juros>
     </app-juros>
+
+    <app-andre-danillo-tarcisio-random-component>
+    </app-andre-danillo-tarcisio-random-component>
+
 
   `,
 })
