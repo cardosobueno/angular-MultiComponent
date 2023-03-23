@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-juros',
   standalone: true,
   templateUrl: './juros.component.html',
   styleUrls: ['./juros.component.css'],
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
 })
 export class JUROSComponent implements OnInit {
   taxa: number = 12;

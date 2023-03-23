@@ -1,5 +1,5 @@
-<p>taxa : {{ result }}</p>
-<p>total :{{ result + valor }}</p>
+<p>taxa : {{ result | currency }}</p>
+<p>total :{{ result + valor | currency }}</p>
 
 <input type="number" placeholder="Mês" [value]="mes" [(ngModel)]="mes" />
 <br />
